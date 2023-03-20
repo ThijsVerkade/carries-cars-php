@@ -15,4 +15,14 @@ final class Duration
         return new self($length);
     }
 
+    public static function fromString($string): self
+    {
+        return new self((int) $string);
+    }
+
+    public function toString(): string
+    {
+        return (string) $this->length;
+    }
+
 }
