@@ -12,11 +12,6 @@
             "CarriesCarsPhp\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "CarriesCarsPhp\\Tests\\": "tests/"
-        }
-    },
     "authors": [
         {
             "name": "Robertbaelde",

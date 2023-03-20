@@ -1,11 +1,9 @@
 <?php
 
-namespace CarriesCarsPhp\Tests\PricingEngine;
+namespace CarriesCarsPhp\PricingEngine;
 
 use Brick\Money\Currency;
 use Brick\Money\Money;
-use CarriesCarsPhp\PricingEngine\Duration;
-use CarriesCarsPhp\PricingEngine\PricingEngine;
 use PHPUnit\Framework\TestCase;
 
 class PricingEngineTest extends TestCase
