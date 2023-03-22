@@ -8,10 +8,8 @@ use Brick\Money\Money;
 class PricingEngine
 {
     public function calculatePrice(
-        DurationOfUsage $duration,
         RentalAgreement $rentalAgreement,
-        DurationOfReservation $timeOfReaching,
-        Mileage $mileage
+        Usage $usage,
     ): Money {
 //        if ($timeOfReaching->isNotEnoughToReachVehicle()) {
 //            $pricePerMinute = Money::of(0.09, Currency::of('EUR'));
@@ -24,6 +22,6 @@ class PricingEngine
 //            $pricePerMinute = Money::total($pricePerMinute, $additionalPrice);
 //        }
 
-        return $rentalAgreement->pricePerMinute->multipliedBy($duration->length);
+        return $rentalAgreement->pricePerMinute->multipliedBy($usage->rideDuration->length);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace CarriesCarsPhp\PricingEngine\ValueObject;
 
-use CarriesCarsPhp\PricingEngine\DurationOfUsage;
+use CarriesCarsPhp\PricingEngine\RideDuration;
 use PHPUnit\Framework\TestCase;
 
 class DistanceTest extends TestCase
